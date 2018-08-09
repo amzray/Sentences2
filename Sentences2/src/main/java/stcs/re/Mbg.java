@@ -13,7 +13,7 @@ public class Mbg {
     public static void main(String[] args) {
          List<String> warnings = new ArrayList<String>();
            boolean overwrite = true;
-           File configFile = new File("src/main/java/stcs/re/generatorConfig.xml");//这里是加载mybatis generator自动生成的配置文件，注意文件名不要弄错
+           File configFile = new File("src/main/java/stcs/re/generatorConfig.xml");
            ConfigurationParser cp = new ConfigurationParser(warnings);
            Configuration config;
         try {

@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.liangzl.demo</groupId>
-  <artifactId>Sentences2</artifactId>
+  <artifactId>Sentences</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SSMsPractise Maven Webapp</name>
+  <name>Sentence Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core -->
@@ -13,6 +13,12 @@
 	    <groupId>org.mybatis.generator</groupId>
 	    <artifactId>mybatis-generator-core</artifactId>
 	</dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>tomcat-servlet-api</artifactId>
+    <version>9.0.10</version>
+</dependency>
   
 	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 	<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
