@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration
+PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+        
+<!--mybatis生成工具的帮助文档可以看：-->
+<!--英文：http://www.mybatis.org/generator/usage/mysql.html-->
+<!--中文：http://www.mybatis.tk/-->
+<!--中文：http://mbg.cndocs.tk/-->
+<generatorConfiguration>
+	<context id="context" targetRuntime="MyBatis3">
+		
+		
+		<!--设置编码格式-->
+		<property name="javaFileEncoding" value="UTF-8"/>
+		
+		<commentGenerator>
+			<!-- 去除自动生成的注释  -->
+			<property name="suppressAllComments" value="true"/>
+		</commentGenerator>
+		
+		<!-- 设置数据库连接信息 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+        	connectionURL="jdbc:mysql://localhost:3306/note?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=Hongkong&amp;useSSL=false"
+			userId="root" password="9ol8ik"/>
+			
+		<!--要生成的po实体类位置-->
+		<javaModelGenerator targetPackage="stcs.model" targetProject="src/main/java/">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+            <property name="comments" value="false"/>
+        </javaModelGenerator>
+        
+		<!--要生成的 Mapper.xml 文件位置-->
+		<sqlMapGenerator targetPackage="stcs.mapper" targetProject="src/main/java/">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        
+		<!--要生成的 Mapper 接口类-->
+		<javaClientGenerator targetPackage="stcs.mapper" targetProject="src/main/java/" type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+        
+        <!-- 依据的数据库表，可以设置生成CRUD的样例 -->
+       
+        <!-- <table tableName="country">
+        	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        </table> -->
+        
+        <!-- <table tableName="sentence">
+        	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        	
+        </table> -->
+        
+        <table tableName="language">
+        	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        </table>
+        
+        <!-- <table tableName="type">
+        	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        </table>
+        
+        <table tableName="customer">
+        	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        </table> -->
+    </context>
+</generatorConfiguration>

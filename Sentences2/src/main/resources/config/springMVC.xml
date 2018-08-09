@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd 
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd 
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+	
+    
+    <context:component-scan base-package="stcs.controller" >
+    	<!-- 只扫描@Controller的类 -->
+    	<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!-- 通过注解来注册RequestMappingHandlerMapper、RequestMappingHandlerAdapter两个映射类 -->
+    <!-- 然后就可以通过@RequestMapping注解来配置方法 -->
+    <mvc:annotation-driven/>
+
+    <!-- 访问静态资源配置，css, js, imgs，location文件夹下的资源将直接被访问 --> 
+    <mvc:default-servlet-handler />
+    <mvc:resources location="/js/" mapping="*.js"/>
+    <mvc:resources location="/image/" mapping="*.jpg"/>
+    <mvc:resources location="/image/" mapping="*.png"/>
+    
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 设置前缀为/WEB-INF/view/ -->
+        <property name="prefix" value="/view"></property>
+        <!-- 设置后缀为.jsp -->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+    
+    
+</beans>
