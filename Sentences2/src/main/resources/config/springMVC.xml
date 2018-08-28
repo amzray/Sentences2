@@ -26,6 +26,7 @@
     <!-- 访问静态资源配置，css, js, imgs，location文件夹下的资源将直接被访问 --> 
     <mvc:default-servlet-handler />
     <mvc:resources location="/js/" mapping="*.js"/>
+    <mvc:resources location="/css/" mapping="*.css"/>
     <mvc:resources location="/image/" mapping="*.jpg"/>
     <mvc:resources location="/image/" mapping="*.png"/>
     

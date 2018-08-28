@@ -5,11 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>LzL的截句本-主页</title>
-<script src="jquery-3.3.1.js"></script>
+<script>
+	location.href = "index";
+</script>
 </head>
 <body>
-	<script>
-		window.location.href = "${pageContext.request.contextPath}/index";
-	</script>
+	
 </body>
 </html>

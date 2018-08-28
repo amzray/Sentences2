@@ -12,12 +12,11 @@
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="bg.css">
+<link rel="stylesheet" href="head.css">
+
 <style>
-	body{background-image:url(bg_full.jpg); background-repeat:no-repeat;}
-	#head{margin-top:10px;}
 	#page{margin-top:210px; font-family:Microsoft YaHei;}
-	#title_frame{position: relative; height:60px; width:320px; padding-left:3%;}
-	#title{position: absolute; padding-top:6px; padding-left:16px; font-family:STKaiti;}
 	[type=password]{height:30px; width:210px; text-size:16px; background-color:rgba(255,255,255,0.5);}
 	button{height:40px; width:100px; margin-top:5px;  background-color:rgba(255,255,255,0.5);}
 	#prompt{height:20px; width:100px;}
