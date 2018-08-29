@@ -10,9 +10,11 @@
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<script src="sentence.js"></script>
 
-<link rel="stylesheet" href="bg.css">
+<script src="url.js"></script>
+<script src="sentence_script.js"></script>
+
+<link rel="stylesheet" href="bg.css?v=10">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
 <link rel="stylesheet" href="form.css">
@@ -73,10 +75,11 @@
 		</div>
 	</div>
 		<div id="options"class="row text-center">
-			<div class="col-6 offset-3">
-				<span id="return"class="col-4"><button type="button" class="btn btn-outline-dark">👋</button></span>
-				<span id="delete"class="col-4"><button type="button" class="btn btn-outline-dark">❌</button></span>
-		  		<span id="top"class="col-4 " ><button type="button" class="btn btn-outline-dark">🔝</button></span>
+			<div class="col-8 offset-2">
+				<span id="random"class="col-3"><button type="button" class="btn btn-outline-dark">🔀</button></span>
+				<span id="delete"class="col-3"><button type="button" class="btn btn-outline-dark">❌</button></span>
+		  		<span id="top"class="col-3 " ><button type="button" class="btn btn-outline-dark">🔝</button></span>
+				<span id="return"class="col-3"><button type="button" class="btn btn-outline-dark">👋</button></span>
 			</div>
 		</div>
 	

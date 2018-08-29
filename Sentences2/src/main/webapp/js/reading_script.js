@@ -1,11 +1,4 @@
-//定义一个获取URL中请求参数的方法
-		(function ($) {
-		  $.getUrlParam = function (name) {
-		   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-		   var r = window.location.search.substr(1).match(reg);
-		   if (r != null) return unescape(r[2]); return null;
-		  }
-		 })(jQuery);
+
 		
 		//渲染语言类型和体裁类型的下拉框
 		function renderSelect(){
@@ -91,18 +84,18 @@
 			//根据跳转到的页面重新设置URL的currPage参数
 			//数字
 			$(".btnjump").children("button").click(function(){
-				var url = window.location.href;
-				window.location.href = url.replace(/currPage=\d*/, ("currPage="+ $(this).text()));
+				var url = location.href;
+				location.href = url.replace(/currPage=\d*/, ("currPage="+ $(this).text()));
 			});
 			//上一页
 			$("#pagePre").children("button").click(function(){
-				var url = window.location.href;
-				window.location.href = url.replace(/currPage=\d*/, ("currPage="+(result.currPage-1)));
+				var url = location.href;
+				location.href = url.replace(/currPage=\d*/, ("currPage="+(result.currPage-1)));
 			});
 			//下一页
 			$("#pageNext").children("button").click(function(){
-				var url = window.location.href;
-				window.location.href = url.replace(/currPage=\d*/, ("currPage="+(result.currPage+1)));
+				var url = location.href;
+				location.href = url.replace(/currPage=\d*/, ("currPage="+(result.currPage+1)));
 			});
 			
 			
@@ -172,7 +165,7 @@
 			});
 			//返回扉页按钮
 			$("#return").children("button").click(function(){
-				window.location.href =  "${pageContext.request.contextPath}/index";
+				location.href =  "index";
 			});
 			//返回顶部按钮
 			$("#top").children("button").click(function(){
@@ -180,7 +173,7 @@
 			});
 			
 			
-			var str1 = "${pageContext.request.contextPath}/rp?currPage="+$.getUrlParam("currPage");
+			var str1 = getContextPath()+"/rp?currPage="+$.getUrlParam("currPage");
 			//异步获取内容页面
 		  	renderPage(str1);
 			

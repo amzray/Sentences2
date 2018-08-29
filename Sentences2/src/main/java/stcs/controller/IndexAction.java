@@ -23,6 +23,8 @@ public class IndexAction{
 //		}
 		session.setAttribute("types", loginService.getTypesJson());
 		session.setAttribute("langs", loginService.getLangsJson());
+		
+		
 		return "/index";
 	}
 	

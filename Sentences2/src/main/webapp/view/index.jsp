@@ -10,11 +10,13 @@
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<script src="index1.js"></script>
+
+<script src="url.js"></script>
+<script src="index_script.js"></script>
 <script src="head_html.js"></script>
 
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="bg.css">
+<link rel="stylesheet" href="bg.css?v=10">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
 

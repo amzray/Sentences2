@@ -30,8 +30,6 @@ public class LoginAction{
 		}
 		else{
 			session.setAttribute("uid", result);
-			session.setAttribute("types", loginService.getTypesJson());
-			session.setAttribute("langs", loginService.getLangsJson());
 			return "redirect:/index";
 		}
 	} 

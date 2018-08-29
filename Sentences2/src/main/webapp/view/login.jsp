@@ -12,7 +12,7 @@
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="bg.css">
+<link rel="stylesheet" href="bg.css?v=10">
 <link rel="stylesheet" href="head.css">
 
 <style>

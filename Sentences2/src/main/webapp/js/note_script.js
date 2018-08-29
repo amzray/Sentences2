@@ -1,4 +1,4 @@
-$(document).ready(function(){
+		$(document).ready(function(){
 		$("#noteform").submit(function(ev){
 			if($("#sentence").children(":first").val()==""){
 				ev.preventDefault();
@@ -13,7 +13,7 @@ $(document).ready(function(){
 		}
 		
 		$("#return").click(function(){
-			window.location.href = "${pageContext.request.contextPath}/index";
+			location.href = "index";
 		});
 		
 		var types = JSON.parse($("#typesjson").text());

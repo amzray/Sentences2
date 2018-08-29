@@ -1,11 +1,4 @@
-//定义一个获取URL中请求参数的方法
-		(function ($) {
-		  $.getUrlParam = function (name) {
-		   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-		   var r = window.location.search.substr(1).match(reg);
-		   if (r != null) return unescape(r[2]); return null;
-		  }
-		 })(jQuery);
+		
 		
 		//渲染语言类型和体裁类型的下拉框
 		function renderSelect(){
@@ -112,6 +105,10 @@
 		
 		
 		$(document).ready(function(){
+			var str1 = getContextPath()+"/ss?sid="+$.getUrlParam("sid");
+			//异步获取内容页面
+		  	renderPage(str1);
+			
 			if($.getUrlParam("updateStatus")==1){
 				$("#updateform").show();
 				$("#prompt").show();
@@ -120,18 +117,7 @@
 				$("#updateform").hide();
 				$("#prompt").hide();
 			}
-			//返回上一页按钮
-			$("#return").children("button").click(function(){
-				window.history.back();
-			});
-			//返回顶部按钮
-			$("#top").children("button").click(function(){
-				$(window).scrollTop(0);
-			});
 			
-			var str1 = "${pageContext.request.contextPath}/ss?sid="+$.getUrlParam("sid");
-			//异步获取内容页面
-		  	renderPage(str1);
 			
 		  //删除按钮
 			$("#delete").children("button").click(function(){
@@ -140,12 +126,26 @@
 			  			cache:false,
 			  			success:function(result){
 			  				if(result==1){
-				  				window.location.href = "${pageContext.request.contextPath}/reading";
+				  				location.href = "reading";
 			  				}else{
 			  					alert("意外！删除失败");
 			  				}
 				  		}
 				  	});
 				}
+			});
+			
+			//随机按钮
+			$("#random").children("button").click(function(){
+				location.href = "sentence";
+			});
+			
+			//返回上一页按钮
+			$("#return").children("button").click(function(){
+				window.history.back();
+			});
+			//返回顶部按钮
+			$("#top").children("button").click(function(){
+				$(window).scrollTop(0);
 			});
 		});

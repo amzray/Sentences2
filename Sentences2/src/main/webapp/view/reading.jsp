@@ -10,9 +10,11 @@
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<script src="reading.js"></script>
 
-<link rel="stylesheet" href="bg.css">
+<script src="url.js"></script>
+<script src="reading_script.js"></script>
+
+<link rel="stylesheet" href="bg.css?v=10">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
 <link rel="stylesheet" href="form.css">
@@ -68,11 +70,12 @@
 		   	<div id="content"></div>
 		</div>
 		<div id="options"class="text-center">
-			<span id="return"class=""><button type="button" class="btn btn-outline-dark">👋</button></span>
 			<span id="pagePre"class="btnmove"><button type="button" class="btn btn-outline-dark">◀️</button></span>
 	   		<span id="pageNums"></span>
 	   		<span id="pageNext"class="btnmove"><button type="button" class="btn btn-outline-dark">▶️</button></span>
    			<span id="top"class=""><button type="button" class="btn btn-outline-dark">🔝</button></span>
+   			<span id="return"class=""><button type="button" class="btn btn-outline-dark">👋</button></span>
+			
    		</div>
 	   	<div id="langsjson" class="text-hide">${langs}</div>
    		<div id="typesjson" class="text-hide">${types}</div>
