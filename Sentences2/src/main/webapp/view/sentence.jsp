@@ -77,7 +77,7 @@
 		<div id="options"class="row text-center">
 			<div class="col-8 offset-2">
 				<span id="random"class="col-3"><button type="button" class="btn btn-outline-dark">🔀</button></span>
-				<span id="delete"class="col-3"><button type="button" class="btn btn-outline-dark">❌</button></span>
+				<span id="delete"class="col-3"><button type="button" class="btn btn-outline-dark">🗑</button></span>
 		  		<span id="top"class="col-3 " ><button type="button" class="btn btn-outline-dark">🔝</button></span>
 				<span id="return"class="col-3"><button type="button" class="btn btn-outline-dark">👋</button></span>
 			</div>
