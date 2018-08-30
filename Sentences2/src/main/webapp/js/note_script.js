@@ -1,34 +1,23 @@
-		$(document).ready(function(){
-		$("#noteform").submit(function(ev){
-			if($("#sentence").children(":first").val()==""){
-				ev.preventDefault();
-				$("#prompt").text("句子不能为空!");
-			}
-		});
-		
-		var s = $("#status").text();
-		//数据库操作成功，影响了1行
-		if(s==1){
-			$("#prompt").text("提交成功！");
+$(document).ready(function(){
+	//检查句子是否为空
+	$("#noteform").submit(function(ev){
+		if($("#sentence").children(":first").val()==""){
+			ev.preventDefault();
+			$("#prompt").text("句子不能为空!");
 		}
-		
-		$("#return").click(function(){
-			location.href = "index";
-		});
-		
-		var types = JSON.parse($("#typesjson").text());
-		var tstr ="";
-		for(var i=0; i<types.length; i++){
-			tstr += ("<option value='"+types[i].id+"'>"+ types[i].name +"</option>");
-		}
-		$("#type").html(tstr);
-		$("#type").children(":first").attr("selected","selected");
-		
-		var langs = JSON.parse($("#langsjson").text());
-		var lstr ="";
-		for(var i=0; i<langs.length; i++){
-			lstr += ("<option value='"+langs[i].id+"'>"+ langs[i].name+"</option>");
-		}
-		$("#lang").html(lstr);
-		$("#lang").children(":first").attr("selected","selected");
 	});
+	
+	//获取到后台返回到前台的结果，录入成功
+	var s = $("#status").text();
+	if(s==1){
+		$("#prompt").text("提交成功！");
+	}
+	
+	//返回按钮
+	$("#return").click(function(){
+		location.href = "index";
+	});
+	
+	//渲染语言类型和体裁类型的下拉框
+	renderSelect();
+});

@@ -1,22 +1,5 @@
 		
 		
-		//渲染语言类型和体裁类型的下拉框
-		function renderSelect(){
-			var types = JSON.parse($("#typesjson").text());
-			var tstr ="";
-			for(var i=0; i<types.length; i++){
-				tstr += ("<option value='"+types[i].id+"'>"+ types[i].name +"</option>");
-			}
-			$("#type").html(tstr);
-			
-			var langs = JSON.parse($("#langsjson").text());
-			var lstr ="";
-			for(var i=0; i<langs.length; i++){
-				lstr += ("<option value='"+langs[i].id+"'>"+ langs[i].name+"</option>");
-			}
-			$("#lang").html(lstr);
-		}
-		
 		
 		//渲染内容
 		function renderContent(result){

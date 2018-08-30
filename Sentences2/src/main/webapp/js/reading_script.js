@@ -1,24 +1,5 @@
 
 		
-		//渲染语言类型和体裁类型的下拉框
-		function renderSelect(){
-			var types = JSON.parse($("#typesjson").text());
-			var tstr ="";
-			tstr += ("<option value='0' selected='selected'>(不限)</option>");
-			for(var i=0; i<types.length; i++){
-				tstr += ("<option value='"+types[i].id+"'>"+ types[i].name +"</option>");
-			}
-			$("#type").html(tstr);
-			
-			var langs = JSON.parse($("#langsjson").text());
-			var lstr ="";
-			lstr += ("<option value='0' selected='selected'>(不限)</option>");
-			for(var i=0; i<langs.length; i++){
-				lstr += ("<option value='"+langs[i].id+"'>"+ langs[i].name+"</option>");
-			}
-			$("#lang").html(lstr);
-		}
-		
 		
 		//渲染内容
 		function renderContent(result){
@@ -158,7 +139,7 @@
 			//隐藏查询菜单
 			$("#searchform").hide();
 			//渲染下拉框
-			renderSelect();
+			renderSelectForSearch();
 			//查询表单打开/关闭动画
 			$("#trigger").click(function(){
 				$("#searchform").slideToggle("middle");

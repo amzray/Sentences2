@@ -12,7 +12,8 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <script src="url.js"></script>
-<script src="sentence_script.js"></script>
+<script src="renderSelect.js"></script>
+<script src="sentence_script.js?v=2"></script>
 
 <link rel="stylesheet" href="bg.css?v=10">
 <link rel="stylesheet" href="head.css">
