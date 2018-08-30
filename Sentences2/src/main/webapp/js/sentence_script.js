@@ -105,7 +105,7 @@
 		  //删除按钮
 			$("#delete").children("button").click(function(){
 				if(confirm("确定要删除这条句子吗？")){
-					$.ajax({url:"${pageContext.request.contextPath}/delete?sid="+$.getUrlParam("sid"),
+					$.ajax({url:getContextPath()+"/delete?sid="+$.getUrlParam("sid"),
 			  			cache:false,
 			  			success:function(result){
 			  				if(result==1){

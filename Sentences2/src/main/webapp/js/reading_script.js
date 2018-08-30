@@ -11,7 +11,7 @@
 				author = (result.list[i].author==null)?"":result.list[i].author;
 				works = (result.list[i].works==null||result.list[i].works=="")?"":("《"+result.list[i].works+"》");
 				dash = (author==""&&works=="")?"":"——";
-				str+=("<div id='"+ result.list[i].id +"' class='sentence'><div class='text text-left'><a href='${pageContext.request.contextPath}/sentence?sid="+result.list[i].id+"'>"+result.list[i].text.replace(/\r\n/g,"<br/>").replace(" ", "&nbsp")+"</a></div><div class='signature text-right'><span class='dash'>"+dash+"</span><span class='author'>"+author+"</span><span class='works'>"+works+"</span></div></div><br/>");
+				str+=("<div id='"+ result.list[i].id +"' class='sentence'><div class='text text-left'><a href='"+getContextPath()+"/sentence?sid="+result.list[i].id+"'>"+result.list[i].text.replace(/\r\n/g,"<br/>").replace(" ", "&nbsp")+"</a></div><div class='signature text-right'><span class='dash'>"+dash+"</span><span class='author'>"+author+"</span><span class='works'>"+works+"</span></div></div><br/>");
 			}
 			$("#content").html(str);
 		}
