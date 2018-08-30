@@ -5,7 +5,7 @@
 		var types = JSON.parse($("#typesjson").text());
 		var tstr ="";
 		for(var i=0; i<types.length; i++){
-			tstr += ("<option value='"+types[i].id+"'>"+ types[i].name +"</option>");
+			tstr += ("<option value='"+types[i].id+"' title='"+types[i].stype+"'>"+ types[i].name +"</option>");
 		}
 		$("#type").html(tstr);
 		//默认选中

@@ -233,6 +233,76 @@ public class TypeExample {
             addCriterion("name not between", value1, value2, "name");
             return (Criteria) this;
         }
+
+        public Criteria andStypeIsNull() {
+            addCriterion("stype is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeIsNotNull() {
+            addCriterion("stype is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeEqualTo(String value) {
+            addCriterion("stype =", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeNotEqualTo(String value) {
+            addCriterion("stype <>", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeGreaterThan(String value) {
+            addCriterion("stype >", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeGreaterThanOrEqualTo(String value) {
+            addCriterion("stype >=", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeLessThan(String value) {
+            addCriterion("stype <", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeLessThanOrEqualTo(String value) {
+            addCriterion("stype <=", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeLike(String value) {
+            addCriterion("stype like", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeNotLike(String value) {
+            addCriterion("stype not like", value, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeIn(List<String> values) {
+            addCriterion("stype in", values, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeNotIn(List<String> values) {
+            addCriterion("stype not in", values, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeBetween(String value1, String value2) {
+            addCriterion("stype between", value1, value2, "stype");
+            return (Criteria) this;
+        }
+
+        public Criteria andStypeNotBetween(String value1, String value2) {
+            addCriterion("stype not between", value1, value2, "stype");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

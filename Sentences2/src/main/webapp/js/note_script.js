@@ -1,3 +1,17 @@
+function renderSpeakerInput(){
+	var currVal = $("#type").val();
+	var str="[value='"+currVal+"']";
+	var speaker = $("#type").children(str).attr("title");
+	if(speaker!="无"){
+		$("label[for='speaker']").text(speaker+"：");
+		$("label[for='speaker']").show();
+		$("input[name='speaker']").show();
+	}else{
+		$("label[for='speaker']").hide();
+		$("input[name='speaker']").hide();
+	}
+}
+
 $(document).ready(function(){
 	//检查句子是否为空
 	$("#noteform").submit(function(ev){
@@ -20,4 +34,12 @@ $(document).ready(function(){
 	
 	//渲染语言类型和体裁类型的下拉框
 	renderSelect();
+	renderSpeakerInput();
+	
+	//根据体裁类型中的字符渲染歌者/人物/角色输入框的标签
+	$("#type").change(function(){
+		renderSpeakerInput();
+	});
+	
+	
 });

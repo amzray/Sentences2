@@ -13,7 +13,7 @@
 
 <script src="url.js"></script>
 <script src="renderSelect.js"></script>
-<script src="note_script.js?v=2"></script>
+<script src="note_script.js?v=7"></script>
 
 
 <link rel="stylesheet" href="bg.css?v=10">
@@ -25,6 +25,9 @@
 </head>
 <body>
 <div class="container">
+		<div id="test"></div>
+		<div id="test2"></div>
+		<div id="test3"></div>
 	  	<div id="head" class="row">
 	  		<div id="title_frame" class="col-6 offset-3" >
 		    	<div id="title" class="text-center" >
@@ -51,7 +54,7 @@
 						<div id="works" class="col-6" ><label for="works">出处：</label><input class="text1" type="text" name="works"/></div>
 					</div>
 					<div class="row row1">
-						<div id="speaker" class="col-6" ><label for="speaker">歌者：</label><input class="text1" type="text" name="speaker" /></div>
+						<div id="speaker" class="col-6" ><label for="speaker"></label><input class="text1" type="text" name="speaker" /></div>
 						<div id="location" class="col-6" ><label for="location">段落：</label><input class="text1" type="text" name="location"/></div>
 					</div>
 					<div class="row row1">

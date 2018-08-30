@@ -52,15 +52,15 @@ PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         	
         </table> -->
         
-        <table tableName="language">
+        <!-- <table tableName="language">
+        	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
+        </table> -->
+        
+        <table tableName="type">
         	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
         </table>
         
-        <!-- <table tableName="type">
-        	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
-        </table>
-        
-        <table tableName="customer">
+        <!-- <table tableName="customer">
         	<generatedKey column="id" sqlStatement="mysql" identity="true"/>
         </table> -->
     </context>

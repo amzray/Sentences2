@@ -5,6 +5,8 @@ public class Type {
 
     private String name;
 
+    private String stype;
+
     public Integer getId() {
         return id;
     }
@@ -19,5 +21,13 @@ public class Type {
 
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
+    }
+
+    public String getStype() {
+        return stype;
+    }
+
+    public void setStype(String stype) {
+        this.stype = stype == null ? null : stype.trim();
     }
 }
