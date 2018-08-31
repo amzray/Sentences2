@@ -12,24 +12,15 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <script src="url.js"></script>
-<script src="renderSelect.js?v=3"></script>
-<script src="reading_script.js?v=2"></script>
+<script src="renderSelect.js?v=4"></script>
+<script src="reading_script.js?v=4"></script>
 
-<link rel="stylesheet" href="bg.css?v=10">
+<link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
 <link rel="stylesheet" href="form.css">
 <link rel="stylesheet" href="content.css">
-<link rel="stylesheet" href="page.css">
-<style>
-	
-	
-	
-	a{color:black}
-	a:hover {color: black}
-	a:active {color: black}
-	.etc{}
-</style>
+<link rel="stylesheet" href="page.css?v=2">
 
 </head>	
 <body>

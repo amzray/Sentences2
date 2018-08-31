@@ -82,16 +82,12 @@
 			
 		}
 		
-		//渲染查询为空信息
-		function renderErrorContent(){
-			var str = "";
-			var author = "管理员";
-			var dash = "——";
-			var text = "(抱歉！查无此句)"
-			str+=("<div class='sentence'><div class='text text-left'>"+text+"</div><div class='signature text-right'><span class='dash'>"+dash+"</span><span class='author'>"+author+"</span><span class='works'></span></div></div>");
-
-			$("#content").html(str);
+		//没有查询到结果的处理
+		function noRecord(){
+			location.href="nss";
 		}
+		
+		
 	
 		function renderPage(urlstr){
 			
@@ -115,6 +111,7 @@
 			$.ajax({url:urlstr,
 	  			cache:false,
 	  			success:function(result){
+	  				//查询到结果
 	  				if(result.totalRecord!=0){
 	  					//渲染内容
 	  					renderContent(result);
@@ -122,12 +119,8 @@
 						renderPageSelect(result);
 	  					//设置按钮的跳转链接
 	  					setBtnsTarget(result);
-	  				}else{
-	  					renderErrorContent();
-	  					//禁用删除按钮
-	  					$("#pagePre").children("button").hide();
-	  					$("#pageNext").children("button").hide();
-	  					$("#top").children("button").hide();
+	  				}else{//没有查询到结果
+	  					noRecord();
 	  				}
 	  				
 		  		},error:function(){

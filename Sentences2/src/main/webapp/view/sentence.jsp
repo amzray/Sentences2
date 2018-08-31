@@ -13,9 +13,9 @@
 
 <script src="url.js"></script>
 <script src="renderSelect.js"></script>
-<script src="sentence_script.js?v=2"></script>
+<script src="sentence_script.js?v=14"></script>
 
-<link rel="stylesheet" href="bg.css?v=10">
+<link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
 <link rel="stylesheet" href="form.css">

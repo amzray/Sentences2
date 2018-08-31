@@ -16,7 +16,7 @@
 <script src="head_html.js"></script>
 
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="bg.css?v=10">
+<link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
 

@@ -4,51 +4,49 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>LzL的截句本-未登录</title>
+<title>LzL的截句本-句子</title>
 
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+<script src="noSuchSentence_script.js"></script>
+
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
+<link rel="stylesheet" href="mybutton.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="page.css">
 
-</head>
-<body>
+<style>
 	
-	<div class="container">
-	  	<div id="head" class="col-4 offset-4 text-center">
-	  		<div id="title_frame" class="" >
+	
+</style>
+
+
+</head>	
+<body>
+<div class="container">
+	<div id="head" class="row">
+	  		<div id="title_frame" class="col-6 offset-3" >
 		    	<div id="title" class="text-center" >
 		    		<h1 class="font-weight-bold">梁哲浪的截句本</h1>
 		    	</div>
-		    	<img src="title_frame.png"/>
 		    </div>
-		    
-		</div>
+		 </div>
 	    
-	   <div id="page" class="col-6 offset-3 text-center"> 
-		   <div id="prompt" class="">
-		    	<h5>未登录！<span id="sec"></span>秒后跳转到登录界面……</h5>
-		    </div>
-	    </div>
-	
-	<script>
-		var seconds =1;
-		$(document).ready(function(){
-			$("#sec").html(seconds);
-			setInterval(function(){
-				seconds--;
-				if(seconds==0){
-					window.location.replace("${pageContext.request.contextPath}/login");
-				}else{
-					$("#sec").html(seconds);
-				}
-			},1000);
-		});
+	<div id="page" class="col-8 offset-2 text-center">
+		<div id="content"></div>
 		
-	</script>
+	</div>
+		<div id="options"class="row text-center">
+			<div class="col-4 offset-4">
+				<span id="return"class="col-3"><button type="button" class="btn btn-outline-dark">👋</button></span>
+			</div>
+		</div>
+		
+</div>
 	
 </body>
 </html>

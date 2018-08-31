@@ -81,7 +81,8 @@ public class ReadingAction{
 			sentence.setTypeId(typeId);
 		}
 		
-		System.out.println(new Gson().toJson(sentence));
+		//test
+//		System.out.println(new Gson().toJson(sentence));
 		
 		
 		Integer totolRecord = readingService.getSentencesCount(sentence);

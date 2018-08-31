@@ -1,5 +1,5 @@
 form{font-size:17px; padding:1% 0% 2%;}
-#noteform{margin-top:1%; padding:3% 1% 2%; border:2px dashed grey;}
+#noteform{margin-top:1%; padding:3% 1% 2%; border:0.2rem double grey;}
 #prompt{padding-top:0.4rem;color:red}
 input[type=text]{height:1.8rem; background-color:rgba(255,255,255,0.5);}
 label{height:12%; text-align:center;} 

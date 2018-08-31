@@ -1,6 +1,5 @@
 		
 		
-		
 		//渲染内容
 		function renderContent(result){
 			var str = "";
@@ -17,15 +16,9 @@
 			$("#content").html(str);
 		}
 		
-		//渲染查询为空信息
-		function renderErrorContent(){
-			var str = "";
-			var author = "管理员";
-			var dash = "——";
-			var text = "(抱歉！查无此句)"
-			str+=("<div class='sentence'><div class='text text-left'>"+text+"</div><div class='signature text-right'><span class='dash'>"+dash+"</span><span class='author'>"+author+"</span><span class='works'></span></div></div>");
-
-			$("#content").html(str);
+		//没有查询到结果的处理
+		function noRecord(){
+			location.href="nss";
 		}
 		
 		//渲染表单
@@ -68,17 +61,13 @@
 	  			cache:false,
 	  			success:function(result){
 	  				//查询成功
-	  				if(result!=null){
+	  				if(result!=null&&result!=""){
 	  					//渲染内容
 		  				renderContent(result);
 		  				//渲染更新表单，启用打开表单的动画
 		  				renderForm(result);
-	  				}else{//查询失败
-	  					//渲染错误信息
-	  					renderErrorContent();
-	  					//禁用删除按钮
-	  					$("#delete").children("button").hide();
-	  					$("#top").children("button").hide();
+	  				}else{//查询失败 
+	  					noRecord();
 	  				}
 		  		},error:function(){
 		  		}
@@ -125,7 +114,7 @@
 			
 			//返回上一页按钮
 			$("#return").children("button").click(function(){
-				window.history.back();
+				history.back();
 			});
 			//返回顶部按钮
 			$("#top").children("button").click(function(){

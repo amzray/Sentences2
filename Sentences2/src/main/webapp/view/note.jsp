@@ -16,18 +16,15 @@
 <script src="note_script.js?v=7"></script>
 
 
-<link rel="stylesheet" href="bg.css?v=10">
+<link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
-<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="form.css?v=2">
 
 
 </head>
 <body>
 <div class="container">
-		<div id="test"></div>
-		<div id="test2"></div>
-		<div id="test3"></div>
 	  	<div id="head" class="row">
 	  		<div id="title_frame" class="col-6 offset-3" >
 		    	<div id="title" class="text-center" >
