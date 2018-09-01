@@ -19,12 +19,8 @@
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
+<link rel="stylesheet" href="indexc.css?v=5">
 
-<style>
-	#page{margin-top:20%; font-family:Microsoft YaHei;}
-	#r1{padding-top:20px;}
-	#welcome{padding-top:20%; font-family:STKaiti;}
-</style>
 
 </head>	
 <body>
@@ -37,21 +33,24 @@
 		    </div>
 		 </div>
 	    
-	   <div id="page" class="col-6 offset-3 text-center"> 
-		   <div id="menu" class="">
-		    	<div class="row">
-		    		<div class="col-3 offset-3"><button id="note" class="btn btn-outline-dark ">✍</button></div>
-					<div class="col-3"><button id="sentence" class="btn btn-outline-dark">📃</button></div>
-		    	</div>
-		    	
-		    	<div class="row" id="r1">
-		    		<div class="col-3 offset-3"><button id="reading" class="btn btn-outline-dark">📖</button></div>
-					<div class="col-3"><button id="cancel"  class="btn btn-outline-dark" disabled="disabled">👋</button></div>
-		    	</div>
-		    </div>
-		    
-		    <div id="welcome" class="text-center"><h4 class="font-weight-bold">梦为努力浇了水&nbsp 爱在背后往前推<!-- Hello, the only ${uid}. --> </h4></div>
+	   <div id="menu" class="text-center col-6 offset-3">
+	   		<div class="row">
+	    		<span class="col-3 offset-3"><button id="note" class="btn btn-outline-dark ">✍</button></span>
+				<span class="col-3 "><button id="search" class="btn btn-outline-dark ">🔍</button></span>
+	    	</div>
+	    	<div class="row">
+	    		<span class="col-3 offset-3"><button id="reading" class="btn btn-outline-dark">📖</button></span>
+				<span class="col-3 "><button id="sentence" class="btn btn-outline-dark">📃</button></span>
+	    	</div>
+	    	<div class="row">
+	    		<span class="col-3 offset-3"><button id="x" class="btn btn-outline-dark" disabled="disabled">x</button></span>
+				<span class="col-3 "><button id="cancel"  class="btn btn-outline-dark" disabled="disabled">👋</button></span>
+	    	</div>
+	    	
 	    </div>
+	    
+	    <div id="welcome" class="text-center"><h4 class="font-weight-bold">梦为努力浇了水&nbsp 爱在背后往前推<!-- Hello, the only ${uid}. --> </h4></div>
+    
 	</div>
 	
 </body>

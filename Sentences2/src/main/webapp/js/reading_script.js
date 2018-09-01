@@ -1,6 +1,4 @@
 
-		
-		
 		//渲染内容
 		function renderContent(result){
 			var str = "";

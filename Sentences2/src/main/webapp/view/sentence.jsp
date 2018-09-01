@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="form.css">
 <link rel="stylesheet" href="content.css">
 <link rel="stylesheet" href="page.css">
-
+<link rel="stylesheet" href="borders.css">
 <style>
 	
 	
@@ -39,9 +39,9 @@
 		    </div>
 		 </div>
 	    
-	<div id="page" class="col-8 offset-2 text-center">
+	<div id="page" class="col-8 offset-2 text-center myframe">
 		<div id="content"></div>
-		<div id="updatemenu">
+		<div id="updatemenu" class="upline">
 		   	<div class="col-1 offset-11 text-right"><label id="trigger" class="icon">○</label></div>
 		   	<form id="updateform" action="${pageContext.request.contextPath}/update" method="POST">
 		   		<input id="sid" type="hidden" name="id" />

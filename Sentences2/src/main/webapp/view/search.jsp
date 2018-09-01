@@ -13,15 +13,18 @@
 
 <script src="url.js"></script>
 <script src="renderSelect.js"></script>
-<script src="note_script.js?v=7"></script>
+<script src="search_s.js"></script>
 
 
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="mybutton.css">
-<link rel="stylesheet" href="form.css?v=3">
-<link rel="stylesheet" href="borders.css?v=2">
+<link rel="stylesheet" href="form.css?v=2">
+<link rel="stylesheet" href="borders.css">
 
+<style>
+	#searchform{margin-top:1rem}
+</style>
 
 </head>
 <body>
@@ -36,8 +39,9 @@
 	    
 	   <div class="row">
 	   	 	<div class="col-8 offset-2 text-center myframe">
-		    	<form id="noteform" action="${pageContext.request.contextPath}/note" method="POST" accept-charset="utf-8">
-					<div class="row">
+		   		<form id="searchform" action="${pageContext.request.contextPath}/reading" method="GET" accept-charset="utf-8">
+		   			<input  type="hidden" name="currPage" value="1"/>
+		   			<div class="row">
 						<div class="col-4 text-left"><div id="prompt" class=""></div></div>
 						<div class="col-8 text-right">
 							<span class="col-6 "><label for="lang">语言：</label><select id="lang"  name="languageId"></select></span>
@@ -45,28 +49,19 @@
 						</div>
 					</div>
 					<div class="row row1">
-						<div id="text" class="col-12"><textarea name="text" placeholder="句子"></textarea></div>
-					</div>
-					<div class="row row1">
 						<div id="author" class="col-6"><label for="author">作者：</label><input class="text1" type="text" name="author"/></div>
 						<div id="works" class="col-6" ><label for="works">出处：</label><input class="text1" type="text" name="works"/></div>
 					</div>
 					<div class="row row1">
-						<div id="speaker" class="col-6" ><label for="speaker"></label><input class="text1" type="text" name="speaker" /></div>
-						<div id="location" class="col-6" ><label for="location">段落：</label><input class="text1" type="text" name="location"/></div>
-					</div>
-					<div class="row row1">
-						<div id="reflection" class="col-12"><textarea name="reflection" placeholder="心得"></textarea></div>
-					</div>
-					<div class="row row1">
-						<div id="labels" class="col-12"><label for="type">标签：</label><input class="text2" type="text" name="labels" /></div>
-					</div>
+						<span id="text" class="col-12"><label for="text">文本：</label><input class="text2" type="text" name="text"/></span>
+		   			</div>
 					<div class="row1 text-center">
-						<span class="btn1"><button type="submit" class="btn btn-outline-dark">▶️</button></span>
-						<span class="btn2"><button type="reset" class="btn btn-outline-dark">⏪</button></span>
-						<span class="btn2"><button id="return" type="button" class="btn btn-outline-dark">👋</button></span>
+						<div class="col-6 offset-3"></div>
+						<span class="col-4"><button type="submit" class="btn btn-outline-dark">🔎</button></span>
+						<span class="col-4"><button type="reset" class="btn btn-outline-dark">⏪</button></span>
+						<span class="col-4"><button id="return" type="button" class="btn btn-outline-dark">👋</button></span>
 					</div>
-				</form>
+		   		</form>
 	   	 </div>
 	   </div>
 	    

@@ -11,6 +11,7 @@
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+<script src="unlogin.js"></script>
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="head.css">
 
@@ -33,22 +34,7 @@
 		    	<h5>未登录！<span id="sec"></span>秒后跳转到登录界面……</h5>
 		    </div>
 	    </div>
-	
-	<script>
-		var seconds =1;
-		$(document).ready(function(){
-			$("#sec").html(seconds);
-			setInterval(function(){
-				seconds--;
-				if(seconds==0){
-					window.location.replace("${pageContext.request.contextPath}/login");
-				}else{
-					$("#sec").html(seconds);
-				}
-			},1000);
-		});
-		
-	</script>
+	</div>
 	
 </body>
 </html>

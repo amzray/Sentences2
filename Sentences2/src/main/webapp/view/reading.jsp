@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="form.css">
 <link rel="stylesheet" href="content.css">
 <link rel="stylesheet" href="page.css?v=2">
+<link rel="stylesheet" href="borders.css">
 
 </head>	
 <body>
@@ -33,10 +34,10 @@
 		    </div>
 		</div>
 	    
-		<div id="page" class="col-8 offset-2 text-center">
-		   	<div id="searchmenu">
+		<div id="page" class="col-8 offset-2 text-center myframe">
+		   	<div id="searchmenu" class="downline">
 		   		<div class="col-1 offset-11 text-right"><label id="trigger" class="icon">○</label></div>
-		   		<form id="searchform" action="${pageContext.request.contextPath}/reading" method="GET" accept-charset="utf-8">
+		   		<form id="searchform"  action="${pageContext.request.contextPath}/reading" method="GET" accept-charset="utf-8">
 		   			<input  type="hidden" name="currPage" value="1"/>
 		   			<div class="row">
 						<div class="col-4 text-left"><div id="prompt" class=""></div></div>
