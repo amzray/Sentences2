@@ -34,6 +34,9 @@ $(document).ready(function(){
 	
 	//渲染语言类型和体裁类型的下拉框
 	renderSelect();
+	//默认选中
+	$("select").children(":first").attr("selected","selected");
+	
 	renderSpeakerInput();
 	
 	//根据体裁类型中的字符渲染歌者/人物/角色输入框的标签

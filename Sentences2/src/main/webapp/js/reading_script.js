@@ -131,6 +131,9 @@
 			$("#searchform").hide();
 			//渲染下拉框
 			renderSelectForSearch();
+			//默认选中
+			$("select option:first-child").attr("selected","selected");
+			
 			//查询表单打开/关闭动画
 			$("#trigger").click(function(){
 				$("#searchform").slideToggle("middle");

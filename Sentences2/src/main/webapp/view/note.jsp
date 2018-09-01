@@ -12,7 +12,7 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <script src="url.js"></script>
-<script src="renderSelect.js"></script>
+<script src="renderSelect.js?v=2"></script>
 <script src="note_script.js?v=7"></script>
 
 

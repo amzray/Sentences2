@@ -28,7 +28,7 @@
 			//渲染下拉框选项
 			renderSelect();
 			
-			//下拉框
+			//渲染下拉框
 			$("#lang").children("option[value='"+result.languageId+"']").attr("selected","selected");
 			$("#type").children("option[value='"+result.typeId+"']").attr("selected","selected");
 			//文本

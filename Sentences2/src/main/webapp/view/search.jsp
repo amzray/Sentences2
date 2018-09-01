@@ -12,8 +12,8 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <script src="url.js"></script>
-<script src="renderSelect.js"></script>
-<script src="search_s.js"></script>
+<script src="renderSelect.js?v=3"></script>
+<script src="search_s.js?v=3"></script>
 
 
 <link rel="stylesheet" href="global.css">
@@ -68,6 +68,7 @@
 	    <div id="status" class="text-hide">${status}</div>
 	    <div id="langsjson" class="text-hide">${langs}</div>
 	    <div id="typesjson" class="text-hide">${types}</div>
+	    <div id="test" ></div>
 	</div>
 	
 </body>
