@@ -5,7 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>LzL的截句本-落笔</title>
-
+<link rel="icon" href="favicon.ico"  type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico"  type="image/x-icon" />
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
