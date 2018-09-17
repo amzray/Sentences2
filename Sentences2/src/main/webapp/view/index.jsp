@@ -52,7 +52,7 @@
 	    	
 	    </div>
 	    
-	    <div id="welcome" class="text-center"><h4 class="font-weight-bold">梦为努力浇了水&nbsp 爱在背后往前推<!-- Hello, the only ${uid}. --> </h4></div>
+	    <div id="welcome" class="text-center"><h4 class="font-weight-bold"><!-- Hello, the only ${uid}. --> </h4></div>
     
 	</div>
 	

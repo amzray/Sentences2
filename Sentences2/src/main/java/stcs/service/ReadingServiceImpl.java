@@ -33,7 +33,9 @@ public class ReadingServiceImpl implements ReadingService{
 	
 	
 	public List<Sentence> getAllSentences() {
-		return sentenceMapper.selectByExample(new SentenceExample());
+		SentenceExample se = new SentenceExample();
+		se.setOrderByClause("`create_time` DESC");
+		return sentenceMapper.selectByExample(se);
 		
 	}
 
@@ -41,6 +43,8 @@ public class ReadingServiceImpl implements ReadingService{
 	public Page<Sentence> getSentencesInPage(Page<Sentence> p, Sentence condition) {
 		
 		SentenceExample example = generateExample(condition);
+		//逆序
+		example.setOrderByClause("`create_time` DESC");
 		//结果分页
 		example.setStartRow(p.getStartRow());
 		example.setPageSize(p.getPageSize());
